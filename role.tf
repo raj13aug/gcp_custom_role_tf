@@ -1,5 +1,5 @@
 resource "google_project_iam_custom_role" "cloud-default" {
-  role_id = "cloud_default"
+  role_id = "cloud_default_1"
   title   = "cloud-default"
   permissions = [
     "compute.disks.addResourcePolicies",
@@ -16,7 +16,7 @@ resource "google_project_iam_custom_role" "cloud-default" {
 
 
 resource "google_project_iam_custom_role" "storage-repository" {
-  role_id = "storage_repository"
+  role_id = "storage_repository_1"
   title   = "storage-repository"
   permissions = [
     "storage.buckets.getIamPolicy",
